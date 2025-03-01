@@ -1,6 +1,9 @@
 "use client"
 import AboutSection from "@/components/aboutsec";
 import { useRouter } from "next/navigation"; 
+import ProductPage from "./homepage/products/page";
+
+import FooterTop from "@/components/footer-top";
 export default function Homepage() {
    const router = useRouter();
    const movetoProductpage = () =>{
@@ -29,6 +32,8 @@ export default function Homepage() {
     </div>
     {/* about section */}
     <AboutSection></AboutSection>
+    <ProductPage></ProductPage>
+    <FooterTop></FooterTop>
     </div>
   );
 }

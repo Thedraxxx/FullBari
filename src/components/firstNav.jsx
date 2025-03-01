@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="w-full h-20 bg-white px-20 flex items-center justify-between text-white border-deep-green border-b-[1px] relative">
@@ -20,10 +20,10 @@ export default function Navbar() {
       {/* Navigation Right Section */}
       <div id="nav-last" className="text-lg flex items-center space-x-10">
         <div id="profile" className="hover:text-green-400 transition duration-300 cursor-pointer text-green-800">
-          Profile
+          <Link href="/auth/login">profile</Link>
         </div>
         <div id="cart" className="hover:text-green-400 transition duration-300 cursor-pointer text-green-800">
-          Cart
+          <Link href="/homepage/cart">Cart</Link>
         </div>
       </div>
     </nav>

@@ -1,7 +1,7 @@
 export default function ProductPage(){
     return (
         <>
-        <div>this is my product page</div>
+        <div>pahila database ma rakhcu ani</div>
         </>
     )
 }
